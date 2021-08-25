@@ -12,7 +12,7 @@ export default class Todo extends Component {
             <div>
                 <PageHeader name='Tasks' small='Register'></PageHeader>
                 <TodoForm />
-                
+        
                 <TodoList />
             </div>
         )
