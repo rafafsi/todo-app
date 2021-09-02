@@ -2,10 +2,10 @@ const port = 3003
 
 const bodyParser = require('body-parser')
 const express = require('express')
-const server = express()
+const server = express() //criando uma instância do express e armazenando em "server"
 const allowCors = require('./cors')
 
-server.use(bodyParser.urlencoded({ extended: true }))
+server.use(bodyParser.urlencoded({ extended: true })) //middleware que irá filtrar por todas as requisições q chegarem 
 server.use(bodyParser.json())
 server.use(allowCors)
 
